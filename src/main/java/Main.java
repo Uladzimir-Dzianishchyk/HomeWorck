@@ -20,6 +20,8 @@ public class Main {
                 System.out.println(ex.getMessage());
             }
         });
+
+
         myThread.start();
 
         ObjectMapper mapper = new ObjectMapper();

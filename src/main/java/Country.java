@@ -15,6 +15,7 @@ public class Country implements Serializable {
         peopleAdd();
     }
 
+
     public Country(String name, int square) {
         this.name = name;
         this.square = square;

@@ -22,6 +22,7 @@ public class People implements Serializable {
 
     public int getAge() {
         return age;
+
     }
 
     @Override
