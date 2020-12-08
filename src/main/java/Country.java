@@ -1,11 +1,12 @@
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @XmlType(propOrder = {"name","square"})
 @XmlRootElement
-public class Country {
+public class Country implements Serializable {
     private String name;
     private int square;
 

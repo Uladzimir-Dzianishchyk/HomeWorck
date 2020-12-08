@@ -1,12 +1,13 @@
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
 @XmlType(propOrder = {"name","massa"},name = "planet")
 @XmlRootElement
-public class Planet {
+public class Planet implements Serializable {
     private String name;
     private int massa;
 

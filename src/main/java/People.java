@@ -1,9 +1,10 @@
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
 
 @XmlType(propOrder = {"name","age"})
 @XmlRootElement
-public class People {
+public class People implements Serializable {
     private String name;
     private int age;
 
